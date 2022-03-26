@@ -1,14 +1,26 @@
-window.addEventListener("click", () => {
-  let YourAge = prompt("Entrer votre âge : ");
-  let HerAge;
+const btn = document.getElementById("btn");
+const age = document.getElementById("age");
+const result = document.getElementById("minim");
 
-  if (YourAge == "" || YourAge == null) {
-    HerAge = alert(null);
-  } else if (YourAge == 0) {
-    HerAge = alert("Tu n'est pas né...");
-  } else if (YourAge < 15) {
-    alert("Va réviser ton brevet petit...");
-  } else {
-    HerAge = alert(`L'âge minimum est de : ${YourAge / 2 + 7} ans`);
-  }
+btn.addEventListener("click", () => {
+  checkAge();
 });
+
+function checkAge() {
+  let yourAge = age.value;
+  let herAge;
+
+  if (yourAge == null || yourAge == 0 || yourAge < 15) {
+    return false;
+  }
+
+  if (yourAge > 22) {
+    herAge =
+      `The minimun age for you is ${yourAge / 2 + 7} years old\n` +
+      "She's of age now don't worry !";
+  } else {
+    herAge = `The minimun age for you is ${yourAge / 2 + 7} years old`;
+  }
+
+  result.innerText = herAge;
+}

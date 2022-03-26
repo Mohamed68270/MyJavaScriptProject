@@ -1,0 +1,73 @@
+body {
+  margin: 0 auto;
+  padding: 0;
+  background-color: wheat;
+}
+
+.big-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  color: rebeccapurple;
+  font-size: 80px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.compo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+#age {
+  box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.452);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: rebeccapurple;
+  width: 10%;
+  height: 8%;
+}
+
+#btn {
+  margin-left: 8px;
+  border: none;
+  border-radius: 5px;
+  color: black;
+  background-color: rebeccapurple;
+  box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.452);
+}
+
+.title {
+  display: flex;
+  color: rebeccapurple;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  font-size: 50px;
+}
+
+#result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  background-color: rebeccapurple;
+  width: 50%;
+  height: 150px;
+  border-radius: 5px;
+  box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.445);
+  margin-left: 25%;
+}
+
+#minim {
+  font-size: 24px;
+  color: wheat;
+  font-family: "Times New Roman", Times, serif;
+}
