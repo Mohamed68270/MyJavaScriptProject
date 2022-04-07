@@ -2,10 +2,6 @@ const btn = document.getElementById("btn");
 const age = document.getElementById("age");
 const result = document.getElementById("minim");
 
-btn.addEventListener("click", () => {
-  checkAge();
-});
-
 function checkAge() {
   let yourAge = age.value;
   let herAge;
@@ -24,3 +20,7 @@ function checkAge() {
 
   result.innerText = herAge;
 }
+
+btn.addEventListener("click", () => {
+  checkAge();
+});
