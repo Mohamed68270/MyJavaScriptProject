@@ -45,6 +45,16 @@ router.put("/:id", (req, res) => {
   );
 });
 
+router.delete("/:id", (req, res) => {
+  if (!ObjectID.isValid(req.params.id))
+    return res.status(400).send("ID unknow : " + req.params.id);
+
+  PostsModel.findByIdAndDelete(req.params.id, (err, docs) => {
+    if (!err) res.send(docs);
+    else console.error("Delete error : " + err);
+  });
+});
+
 module.exports = router;
 
 // 51:34
